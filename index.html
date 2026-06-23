@@ -30,7 +30,7 @@
   .orient{font-family:var(--mono);font-size:10.5px;line-height:1.6;letter-spacing:.02em;color:var(--mut);margin:13px 2px 0;font-weight:400}
   .orient b{color:var(--brass);font-weight:500}
 
-  .bars{position:sticky;top:0;z-index:30;background:rgba(248,247,243,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .bars{position:sticky;top:0;z-index:30;background:rgba(248,247,243,.99);border-bottom:1px solid var(--line);will-change:transform}
   .bars-row{display:flex;align-items:stretch}
   nav{flex:1;display:flex;gap:0;padding:0 8px;overflow-x:auto;-webkit-overflow-scrolling:touch}
   nav button{flex:0 0 auto;border:0;border-bottom:2px solid transparent;background:transparent;color:var(--mut);
@@ -122,15 +122,6 @@
   <p class="orient">Ebisu is base. Tap <b>+</b> to save any spot, open <b>Plan</b> and hit <b>Share</b> to copy your shortlist. Saves on this device only.</p>
 </header>
 
-<details class="plansmart" style="border-radius:0;border-left:0;border-right:0;border-top:0;margin:0">
-  <summary style="font-size:15px;letter-spacing:.01em">How this was made</summary>
-  <div class="ps-body" style="padding-top:14px">
-    <p class="ps-intro">Ranked by signal strength. Primary sources: r/JapanTravel, r/Tokyo, and firsthand recommendations from people who have been recently, cross-checked against Tabelog. Tourist-trap indicators &mdash; high TripAdvisor placement, influencer visibility, generic "best of Tokyo" listicles &mdash; are filters out, not in.</p>
-    <p class="ps-intro">The top three in each section are where the signal is strongest. Everything below the fold cleared the quality bar but with less consensus behind it. <b>Friend Rec</b> means someone with firsthand Tokyo knowledge specifically named it. <b>Walk-in</b> means no reservation, usually a wait. <b>Reserve</b> means booking ahead is non-negotiable.</p>
-    <p class="ps-intro" style="margin:0">Scoped to two days with Ebisu as base: walkable neighborhoods, a canal evening, clean Thursday exit to Haneda. No Japan experience assumed anywhere in the copy.</p>
-  </div>
-</details>
-
 <div class="bars">
   <div class="bars-row">
     <nav>
@@ -152,6 +143,15 @@
 </div>
 
 <main>
+
+<details class="plansmart" style="margin:14px 0 4px">
+  <summary style="font-size:15px;letter-spacing:.01em">How this was made</summary>
+  <div class="ps-body" style="padding-top:14px">
+    <p class="ps-intro">Ranked by signal strength. Primary sources: r/JapanTravel, r/Tokyo, and firsthand recommendations from people who have been recently, cross-checked against Tabelog. Tourist-trap indicators &mdash; high TripAdvisor placement, influencer visibility, generic "best of Tokyo" listicles &mdash; are filters out, not in.</p>
+    <p class="ps-intro">The top three in each section are where the signal is strongest. Everything below the fold cleared the quality bar but with less consensus behind it. <b>Friend Rec</b> means someone with firsthand Tokyo knowledge specifically named it. <b>Walk-in</b> means no reservation, usually a wait. <b>Reserve</b> means booking ahead is non-negotiable.</p>
+    <p class="ps-intro" style="margin:0">Scoped to two days with Ebisu as base: walkable neighborhoods, a canal evening, clean Thursday exit to Haneda. No Japan experience assumed anywhere in the copy.</p>
+  </div>
+</details>
 
 <!-- PLAN -->
 <section id="plan">
