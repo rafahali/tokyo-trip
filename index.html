@@ -36,6 +36,10 @@
     font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.14em;padding:13px 13px;text-transform:uppercase;cursor:pointer}
   nav button.on{color:var(--brass);border-bottom-color:var(--brass)}
   nav button.plan{color:var(--soft)}
+  nav a.planner-link{flex:0 0 auto;border:0;border-bottom:2px solid transparent;background:transparent;color:var(--soft);
+    font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.14em;padding:13px 13px;text-transform:uppercase;
+    cursor:pointer;text-decoration:none;display:flex;align-items:center;margin-left:auto}
+  nav a.planner-link:hover{color:var(--brass)}
   .dayfilter{display:flex;align-items:center;gap:7px;padding:9px 14px;overflow-x:auto;-webkit-overflow-scrolling:touch;border-top:1px solid var(--line2)}
   .dayfilter .dl{font-family:var(--mono);font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--mut);flex:0 0 auto;font-weight:400}
   .dayfilter button{flex:0 0 auto;background:transparent;border:1px solid var(--line);color:var(--soft);
@@ -133,6 +137,7 @@
     <button data-sec="do">Do</button>
     <button data-sec="wander">Wander</button>
     <button data-sec="tips">Tips</button>
+    <a href="plan.html" class="planner-link">Planner &#8594;</a>
   </nav>
   <div class="dayfilter">
     <span class="dl">By day</span>
