@@ -71,6 +71,7 @@
   .tag.wi{color:var(--soft)}
   .tag.lock{font-size:11px;letter-spacing:.05em;color:#6b2a1e;background:rgba(139,74,58,.12);border:1px solid rgba(139,74,58,.4);padding:3px 8px;border-radius:2px;text-transform:uppercase}
   .tag.day{font-size:10px;letter-spacing:.1em;color:var(--brass);background:rgba(78,93,74,.08);border:1px solid rgba(78,93,74,.32);padding:3px 8px;border-radius:2px}
+  .tag.friend{font-size:10px;letter-spacing:.1em;color:#5a6e57;background:rgba(78,93,74,.06);border:1px dashed rgba(78,93,74,.45);padding:3px 8px;border-radius:2px}
   .card p{margin:12px 0 13px;font-size:15.5px;line-height:1.65;color:var(--soft)}
   .links{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
   .btn{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:7px 12px;border-radius:2px;border:1px solid var(--line);color:var(--mut);background:transparent;font-weight:400}
@@ -115,6 +116,14 @@
   <h1>Two Days.<br>Tokyo.</h1>
   <p class="orient">Ebisu is base. Tap <b>+</b> to save any spot, open <b>Plan</b> and hit <b>Share</b> to copy your shortlist. Saves on this device only.</p>
 </header>
+
+<details class="plansmart" style="border-radius:0;border-left:0;border-right:0;border-top:0;margin:0">
+  <summary style="font-size:15px;letter-spacing:.01em">About this guide</summary>
+  <div class="ps-body">
+    <p class="ps-intro" style="margin-bottom:10px">This guide was built by a friend. Each section is ranked by quality signal: local Reddit communities, friend recommendations from people who've actually been, and a filter against tourist traps and algorithm picks. The top three in each section are the real recommendations. Everything else is worth knowing about. Spots marked <b>Friend Rec</b> came from someone with firsthand knowledge. Tap + to build a shortlist.</p>
+    <p class="ps-intro" style="margin:0;color:var(--soft)">Built for: solo two days in Tokyo, Ebisu as base. Priorities: great walkable neighborhoods, ramen, a Wednesday evening on the canal. No Japan experience assumed.</p>
+  </div>
+</details>
 
 <div class="bars">
   <nav>
@@ -165,6 +174,17 @@
   </div>
 </details>
 
+<div style="border:1px solid rgba(139,74,58,.38);border-radius:2px;padding:16px 18px;margin:10px 0 6px;background:rgba(139,74,58,.04)">
+  <div style="font-family:var(--mono);font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:#6b2a1e;font-weight:500;margin-bottom:12px">Book Before You Go</div>
+  <div style="font-family:var(--mono);font-size:13px;color:var(--soft);line-height:1.9">
+    <div>&#9744; <b style="color:var(--txt)">Hotel</b> &mdash; Westin Tokyo (Ebisu Garden Place) or Trunk Hotel (Daikanyama). Book now; Ebisu fills fast.</div>
+    <div>&#9744; <b style="color:var(--txt)">Yoroniku</b> &mdash; High-end yakiniku, reservation recommended. Check tableall.com or their site.</div>
+    <div>&#9744; <b style="color:var(--txt)">Kushiwaekamaru</b> &mdash; Walk-in, but verify current status on Tabelog before going.</div>
+    <div>&#9745; <b style="color:var(--txt)">Rengatei</b> &mdash; Walk-in. Arrive before 6pm Wed for dinner.</div>
+    <div>&#9745; <b style="color:var(--txt)">Everything else</b> &mdash; Walk-in, no reservation needed.</div>
+  </div>
+</div>
+
 <!-- EAT -->
 <section data-sec="eat">
   <div class="sec-head"><span class="n">01</span><h2>Eat</h2></div>
@@ -182,7 +202,7 @@
   <div class="card star" data-id="t-kushiwa" data-name="Kushiwaekamaru" data-day="wed" data-daytag="Wed evening">
     <div class="card-head"><h3><span class="rank">2</span>Kushiwaekamaru</h3><span class="price">~$20&ndash;35</span></div>
     <div class="dm">&#9733; Top three &middot; Michelle rec &middot; canal-side yakitori</div>
-    <div class="tags"><span class="tag vibe">kushiyaki over binch&#333;tan</span><span class="tag">Kamimeguro &middot; 15 min walk</span><span class="tag wi">walk-in</span><span class="tag day">Wed evening</span></div>
+    <div class="tags"><span class="tag vibe">kushiyaki over binch&#333;tan</span><span class="tag">Kamimeguro &middot; 15 min walk</span><span class="tag wi">walk-in</span><span class="tag friend">Friend Rec</span><span class="tag day">Wed evening</span></div>
     <p>Michelle's pick for a Wednesday evening: a skewer counter right on the Kamimeguro stretch of the canal, grilling yakitori and kushiyaki over white charcoal while the water runs outside. No independent Reddit signal, but Michelle is a credible source and this is exactly the type of spot that hasn't made it to the algorithm yet. The canal path back to Ebisu on foot is 15 minutes; the right way to end the evening is to walk it. Go around 7pm. Verified fallback if this doesn't pan out: Toriyoshi, 500m north on the same canal, three independent specialist endorsements. Walk-in only, arrive 20 minutes before opening. Foreigners are served a la carte, not omakase.</p>
     <div class="links"><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Kushiwaekamaru+1-13-5+Kamimeguro+Meguro+Tokyo">Map</a><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Toriyoshi+Nakameguro+Tokyo">Toriyoshi map</a><button class="add">+</button></div>
   </div>
@@ -216,7 +236,7 @@
     </div>
     <div class="card" data-id="t-coco" data-name="CoCo Ichibanya" data-day="wed,thu" data-daytag="">
       <div class="card-head"><h3><span class="rank">7</span>CoCo Ichibanya</h3><span class="price">~$10&ndash;15</span></div>
-      <div class="tags"><span class="tag vibe">chicken katsu curry</span><span class="tag">Shibuya &middot; multiple locations</span><span class="tag wi">walk-in</span></div>
+      <div class="tags"><span class="tag vibe">chicken katsu curry</span><span class="tag">Shibuya &middot; multiple locations</span><span class="tag wi">walk-in</span><span class="tag friend">Friend Rec</span></div>
       <p>Yes, it's a chain. Michelle recommends it specifically: chicken katsu curry, customizable spice level (1 through 10), over rice with thick curry roux. This is the no-decision comfort-food option when you want something fast and genuinely good. Branches in Shibuya and near Ebisu. The chicken katsu is the order.</p>
       <div class="links"><a class="btn" href="https://www.google.com/maps/search/?api=1&query=CoCo+Ichibanya+Shibuya+Tokyo">Map</a><button class="add">+</button></div>
     </div>
@@ -278,7 +298,7 @@
   <div class="card star" data-id="t-asakura" data-name="Kyu Asakura House" data-day="wed,thu" data-daytag="">
     <div class="card-head"><h3><span class="rank">2</span>Kyu Asakura House</h3><span class="price">~$2 entry</span></div>
     <div class="dm">&#9733; Top three &middot; Michelle rec</div>
-    <div class="tags"><span class="tag vibe">1919 Meiji-era residence</span><span class="tag">Sarugakucho &middot; 2 min from T-Site</span><span class="tag wi">walk-in</span></div>
+    <div class="tags"><span class="tag vibe">1919 Meiji-era residence</span><span class="tag">Sarugakucho &middot; 2 min from T-Site</span><span class="tag wi">walk-in</span><span class="tag friend">Friend Rec</span></div>
     <p>A preserved 1919 wooden residence on the Sarugakucho lane that connects Daikanyama to the canal, designated a national cultural asset. Built in the Meiji style with a traditional garden, interior rooms you can walk through, and a rock garden that's been unchanged for over a century. One of the few intact traditional Japanese houses accessible in central Tokyo, and it's entirely surrounded by boutiques and coffee shops. Do it between T-Site and the canal walk; it's two minutes on foot and costs almost nothing.</p>
     <div class="links"><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Kyu+Asakura+House+29-20+Sarugakucho+Shibuya+Tokyo">Map</a><button class="add">+</button></div>
   </div>
@@ -287,7 +307,7 @@
     <div class="card-head"><h3><span class="rank">3</span>Nakameguro Canal Walk</h3><span class="price">free</span></div>
     <div class="dm">&#9733; Top three &middot; the anchor walk</div>
     <div class="tags"><span class="tag vibe">meguro river + cherry trees</span><span class="tag">15 min walk from Ebisu</span><span class="tag wi">any time</span></div>
-    <p>The Meguro River runs about 2km through Nakameguro, both banks lined with restaurants and cafes that put terraces down to the water, cherry trees overhead, and footbridges at each block. Beautiful in any season. Start at the south end near Ebisu and walk north toward Nakameguro Station, stopping at Onibus and Woodberry along the way. The full loop back through Daikanyama to T-Site is 3 to 4 hours if you let it be, which you should on Wednesday. Kushiwaekamaru sits right on the canal for the evening if you want to finish the walk with dinner.</p>
+    <p>The Meguro River runs about 2km through Nakameguro, both banks lined with restaurants and cafes that put terraces down to the water, cherry trees overhead, and footbridges at each block. Beautiful in any season. Start at the south end near Ebisu and walk north toward Nakameguro Station, stopping at Onibus along the canal. The full loop back through Daikanyama to T-Site is 3 to 4 hours if you let it be, which you should on Wednesday. Kushiwaekamaru sits right on the canal for the evening if you want to finish the walk with dinner.</p>
     <div class="links"><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Nakameguro+Canal+Meguro+River+Tokyo">Map</a><button class="add">+</button></div>
   </div>
 
@@ -339,9 +359,9 @@
   </div>
 
   <div class="more">
-    <div class="card" data-id="t-goldengai" data-name="Golden Gai" data-day="wed" data-daytag="Wed night">
+    <div class="card" data-id="t-goldengai" data-name="Golden Gai" data-day="wed,thu" data-daytag="Wed or Thu evening">
       <div class="card-head"><h3><span class="rank">4</span>Golden Gai</h3><span class="price">~$5&ndash;15 per bar</span></div>
-      <div class="tags"><span class="tag vibe">200 tiny bars in one alley</span><span class="tag">Shinjuku &middot; 20 min by train</span><span class="tag day">Wed night</span></div>
+      <div class="tags"><span class="tag vibe">200 tiny bars in one alley</span><span class="tag">Shinjuku &middot; 20 min by train</span><span class="tag day">Wed or Thu evening</span></div>
       <p>The most social night out in Tokyo for a solo traveler: a Shinjuku alleyway of 200+ bars, most holding 8 to 12 people at most. The format forces conversation with whoever's next to you in a way almost nowhere else does. Each bar has a theme: jazz bars, film-poster bars, bars run by a single person who's been there 30 years. Door charges run 300&ndash;500 yen. The bars in the north alley skew slightly less tourist-forward. Take the Yamanote Line to Shinjuku, about 20 minutes from Ebisu.</p>
       <div class="links"><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Golden+Gai+Shinjuku+Tokyo">Map</a><button class="add">+</button></div>
     </div>
