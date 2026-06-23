@@ -419,7 +419,7 @@ navBtns.forEach(b=>{
   b.addEventListener('click',()=>{
     const sec=b.dataset.sec;
     setNav(sec);
-    let el=sec==='plan'?document.getElementById('plan'):document.querySelector('[data-sec="'+sec+'"]');
+    let el=sec==='plan'?document.getElementById('plan'):document.querySelector('section[data-sec="'+sec+'"]');
     if(el)el.scrollIntoView({behavior:'smooth',block:'start'});
   });
 });
